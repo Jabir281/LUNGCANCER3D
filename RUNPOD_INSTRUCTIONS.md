@@ -23,32 +23,35 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
-## 4. Download and Prepare Data
+## 4. Transfer Data from Local PC (Fastest Method)
 
-You need to download the dataset from the OneDrive link you provided. We will use `wget` to download it.
+Since `wget` can struggle with OneDrive links, and you have the data locally, the fastest and most reliable method is to use **SCP (Secure Copy)**. This transfers the file directly from your computer to the RunPod instance over SSH.
 
-### Option A: Direct Download (if link is direct)
+### Prerequisites
+1.  **Zipped Data:** Ensure your data is zipped on your local computer (e.g., `data.zip`).
+2.  **SSH Connection Details:** Get your RunPod instance's **IP Address** and **Port** from the RunPod dashboard (click "Connect" -> "SSH").
 
-```bash
-# Create a directory for the data
-mkdir data
+### Command
+Run this command **from your local computer's terminal** (PowerShell or Command Prompt):
 
-# Download the zip file (using the link you provided)
-# Note: If this link expires or is dynamic, you might need to generate a new one.
-wget -O data.zip "https://southeastasia1-mediap.svc.ms/transform/zip?cs=fFNQTw"
+```powershell
+# Syntax: scp -P [PORT] [PATH_TO_LOCAL_FILE] root@[IP_ADDRESS]:[REMOTE_PATH]
 
-# Unzip the data into the 'data' folder
-unzip data.zip -d data
+# Example:
+scp -P 12345 "C:\Users\Hp\OneDrive\Desktop\LungCancer3D\data.zip" root@192.168.1.1:/root/LUNGCANCER3D/
 ```
 
-### Option B: If the link doesn't work with wget directly
+*   Replace `12345` with your Pod's Port.
+*   Replace `192.168.1.1` with your Pod's IP.
+*   Replace the local path with the actual location of your zip file.
 
-If the link above fails or downloads an HTML file, you might need to:
-1. Download the file to your local machine.
-2. Upload it to RunPod using `scp` or the JupyterLab upload interface.
-3. Or use a tool like `gdown` if it's a Google Drive link (but this is OneDrive).
+### After Transfer (On RunPod)
+Once the transfer finishes, go back to your RunPod terminal:
 
-**Verifying Data Structure:**
+```bash
+cd LUNGCANCER3D
+unzip data.zip -d data
+```
 Ensure your `data` folder contains the `.npy` files. The script expects the structure to be something like:
 ```
 LUNGCANCER3D/
