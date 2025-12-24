@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+numpy
+pandas
+scikit-learn
+tqdm
+SimpleITK
