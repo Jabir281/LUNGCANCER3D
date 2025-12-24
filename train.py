@@ -125,7 +125,7 @@ def main():
     LEARNING_RATE = 1e-3
     WEIGHT_DECAY = 1e-4
     VALIDATION_SPLIT = 0.2
-    NUM_WORKERS = min(16, os.cpu_count())  # A100 instances typically have many cores
+    NUM_WORKERS = 7  # Set to 7 as requested
     SEED = 42
     
     # Set random seed
