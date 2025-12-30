@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, random_split
-from torch.cuda.amp import GradScaler, autocast
+from torch.cuda.amp import GradScaler
 from tqdm import tqdm
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
@@ -60,7 +60,7 @@ def train_one_epoch(model, train_loader, criterion, optimizer, scaler, device):
         optimizer.zero_grad()
         
         # Mixed precision training
-        with autocast():
+        with torch.amp.autocast('cuda'):
             outputs = model(inputs)
             loss = criterion(outputs, labels)
         

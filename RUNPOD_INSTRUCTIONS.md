@@ -23,45 +23,74 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
-## 4. Transfer Data from Local PC (Fastest Method)
+## 4. Download Data from Google Drive
 
-Since `wget` can struggle with OneDrive links, and you have the data locally, the fastest and most reliable method is to use **SCP (Secure Copy)**. This transfers the file directly from your computer to the RunPod instance over SSH.
+We will use `gdown` to download the dataset directly from Google Drive.
 
-### Prerequisites
-1.  **Zipped Data:** Ensure your data is zipped on your local computer (e.g., `data.zip`).
-2.  **SSH Connection Details:** Get your RunPod instance's **IP Address** and **Port** from the RunPod dashboard (click "Connect" -> "SSH").
+1.  **Ensure gdown is installed:**
+    ```bash
+    pip install gdown
+    ```
 
-### Command
-Run this command **from your local computer's terminal** (PowerShell or Command Prompt):
+2.  **Download the file:**
+    ```bash
+    # Try running gdown directly
+    gdown 135ncVlpPbWPZZKWpWAtCivHEJVShrBo1 -O data.zip
+    ```
+    *If you get "command not found", try using python3:*
+    ```bash
+    python3 -m gdown 135ncVlpPbWPZZKWpWAtCivHEJVShrBo1 -O data.zip
+    ```
 
-```powershell
-# Syntax: scp -P [PORT] [PATH_TO_LOCAL_FILE] root@[IP_ADDRESS]:[REMOTE_PATH]
+3.  **Unzip the data:**
+    If `unzip` is not installed, install it first:
+    ```bash
+    apt-get update && apt-get install -y unzip
+    ```
+    
+    **Step A: Unzip Main Archive** (Skip if you already did this and deleted `data.zip`)
+    ```bash
+    unzip data.zip -d data
+    ```
 
-# Example:
-scp -P 12345 "C:\Users\Hp\OneDrive\Desktop\LungCancer3D\data.zip" root@192.168.1.1:/root/LUNGCANCER3D/
-```
+    **Step B: Unzip Nested Archives**
+    Navigate to the folder:
+    ```bash
+    cd data/lung_cancer_processed_dataset
+    ```
+    
+    **Option 1: If you have `.zip` files here:**
+    Run this to extract them into organized folders:
+    ```bash
+    for f in *.zip; do
+        unzip "$f" -d "${f%.zip}"
+    done
+    ```
+    
+    **Option 2: If you already extracted them (files are present but flat):**
+    You don't need to do anything. The training script (`dataset.py`) searches recursively, so it will find the `.npy` files even if they are all in one folder.
 
-*   Replace `12345` with your Pod's Port.
-*   Replace `192.168.1.1` with your Pod's IP.
-*   Replace the local path with the actual location of your zip file.
+    Return to the main directory:
+    ```bash
+    cd ../..
+    ```
 
-### After Transfer (On RunPod)
-Once the transfer finishes, go back to your RunPod terminal:
+### Expected Structure
+The data will be in `data/lung_cancer_processed_dataset`. 
+*   **Organized:** You might see folders like `subset0_processed/`, `subset1_processed/`, etc.
+*   **Flat:** Or you might see a long list of `.npy` files directly in this folder.
 
-```bash
-cd LUNGCANCER3D
-unzip data.zip -d data
-```
-Ensure your `data` folder contains the `.npy` files. The script expects the structure to be something like:
-```
-LUNGCANCER3D/
-  data/
-    subset0/
-      ...npy files...
-    subset1/
-      ...npy files...
-```
-Or just flat `.npy` files inside `data/`. The `dataset.py` script searches recursively for `.npy` files, so subfolders are fine.
+**Both are fine.** The `dataset.py` script uses recursive search, so it will automatically find all `.npy` files regardless of the folder structure.
+
+4.  **Clean Up Zip Files (Save Space):**
+    Once you have verified the folders are extracted, delete the zip files to free up disk space:
+    ```bash
+    # Remove the main zip file
+    rm data.zip
+
+    # Remove the nested zip files
+    rm data/lung_cancer_processed_dataset/*.zip
+    ```
 
 ## 5. Verify Configuration
 
@@ -95,3 +124,31 @@ python train.py
 - **Out of Memory (OOM):** If you encounter OOM errors, reduce `BATCH_SIZE` in `train.py`.
 - **Data Not Found:** Ensure `DATA_DIR` in `train.py` points to the correct location where you unzipped the data.
 - **Permission Denied:** If you have trouble running scripts, try `chmod +x train.py`.
+
+## 8. After Training (IMPORTANT)
+
+Once training reaches 50/50 epochs, follow these steps immediately to save your work and stop paying:
+
+1.  **Save Training Logs:**
+    *   The training script prints accuracy and loss to the terminal but does not save a file.
+    *   **Action:** Select all text in your RunPod terminal, copy it, and paste it into a text file (e.g., `training_logs.txt`) on your local computer. You will need this to plot your accuracy curves later.
+
+2.  **Download the Model:**
+    You need to get `best_model.pth` off the RunPod instance.
+    *   **Option A (RunPod Jupyter):** Right-click `best_model.pth` -> Download.
+    *   **Option B (SCP):**
+        ```powershell
+        scp -P [PORT] root@[IP]:/root/LUNGCANCER3D/best_model.pth .
+        ```
+
+3.  **Download Sample Data (For Visualization):**
+    To visualize predictions locally, you need a few sample files. You don't need the whole dataset.
+    *   **Action:** Go to `data/lung_cancer_processed_dataset/subset0_processed/` (or similar) in the Jupyter file browser.
+    *   Download **one positive sample** (filename contains `_pos_`) and **one negative sample** (filename contains `_neg_`).
+    *   Save them to a `samples` folder on your local PC.
+
+4.  **Terminate the Pod:**
+    *   Go to the RunPod Dashboard.
+    *   Find your pod.
+    *   Click **Terminate** (to delete everything and stop billing).
+    *   **Recommendation:** Do this immediately after downloading your files.

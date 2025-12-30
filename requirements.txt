@@ -6,3 +6,7 @@ pandas
 scikit-learn
 tqdm
 SimpleITK
+gdown
+matplotlib
+ipykernel
+ipywidgets
