@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Large data directories
+data/
+data_old/
+data_raw/
+luna16_processed/
+
+# Model checkpoints & large model artifacts
+outputs/checkpoints/
+scripts/Sadit/Hybrid_Models/*/latest_checkpoint.pth
+scripts/Sadit/Hybrid_Models/*/best_model.pth
+
+# Kilo worktree internal data
+.kilo/
+
+# Sadit Report & Journal (user requested exclusion)
+scripts/Sadit/Report/
+scripts/Sadit/IEEE_Journal/
+scripts/Sadit/Lung_Cancer_Thesis_Defense.pdf

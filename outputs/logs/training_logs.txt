@@ -1,0 +1,466 @@
+Starting training...
+
+Epoch 1/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.6233, Acc: 0.6925, Prec: 0.2500, Rec: 0.0021, F1: 0.0042, AUC: 0.5944
+Val   - Loss: 0.5686, Acc: 0.6844, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6522
+✓ Saved best model with validation accuracy: 0.6844
+
+Epoch 2/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5972, Acc: 0.6938, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6502
+Val   - Loss: 0.5482, Acc: 0.6844, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6274
+
+Epoch 3/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5674, Acc: 0.6938, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6998
+Val   - Loss: 0.5094, Acc: 0.6844, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6853
+
+Epoch 4/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5680, Acc: 0.6945, Prec: 0.5294, Rec: 0.0191, F1: 0.0368, AUC: 0.7098
+Val   - Loss: 0.5038, Acc: 0.6844, Prec: 0.0000, Rec: 0.0000, F1: 0.0000, AUC: 0.6600
+
+Epoch 5/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5550, Acc: 0.6945, Prec: 0.5104, Rec: 0.0520, F1: 0.0943, AUC: 0.7044
+Val   - Loss: 0.5209, Acc: 0.6987, Prec: 0.5390, Rec: 0.3128, F1: 0.3958, AUC: 0.6936
+✓ Saved best model with validation accuracy: 0.6987
+
+Epoch 6/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5594, Acc: 0.7036, Prec: 0.5260, Rec: 0.3213, F1: 0.3989, AUC: 0.7241
+Val   - Loss: 0.6704, Acc: 0.4987, Prec: 0.3702, Rec: 0.8395, F1: 0.5139, AUC: 0.6360
+
+Epoch 7/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5512, Acc: 0.7195, Prec: 0.5792, Rec: 0.3065, F1: 0.4008, AUC: 0.7082
+Val   - Loss: 0.5022, Acc: 0.6766, Prec: 0.4883, Rec: 0.5144, F1: 0.5010, AUC: 0.7084
+
+Epoch 8/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5409, Acc: 0.7208, Prec: 0.5700, Rec: 0.3584, F1: 0.4401, AUC: 0.7409
+Val   - Loss: 0.5129, Acc: 0.7052, Prec: 0.5392, Rec: 0.4527, F1: 0.4922, AUC: 0.7109
+✓ Saved best model with validation accuracy: 0.7052
+
+Epoch 9/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.5193, Acc: 0.7357, Prec: 0.6248, Rec: 0.3425, F1: 0.4425, AUC: 0.7511
+Val   - Loss: 0.4905, Acc: 0.7143, Prec: 0.5628, Rec: 0.4239, F1: 0.4836, AUC: 0.7307
+✓ Saved best model with validation accuracy: 0.7143
+
+Epoch 10/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.4933, Acc: 0.7519, Prec: 0.6607, Rec: 0.3902, F1: 0.4907, AUC: 0.7896
+Val   - Loss: 0.6193, Acc: 0.6455, Prec: 0.4571, Rec: 0.6584, F1: 0.5396, AUC: 0.7150
+
+Epoch 11/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.4290, Acc: 0.8068, Prec: 0.7589, Rec: 0.5408, F1: 0.6316, AUC: 0.8460
+Val   - Loss: 0.6251, Acc: 0.7558, Prec: 0.8667, Rec: 0.2675, F1: 0.4088, AUC: 0.7905
+✓ Saved best model with validation accuracy: 0.7558
+
+Epoch 12/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.4271, Acc: 0.8386, Prec: 0.8369, Rec: 0.5875, F1: 0.6903, AUC: 0.8594
+Val   - Loss: 0.4730, Acc: 0.7675, Prec: 0.5964, Rec: 0.8148, F1: 0.6887, AUC: 0.8668
+✓ Saved best model with validation accuracy: 0.7675
+
+Epoch 13/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.3393, Acc: 0.8669, Prec: 0.8294, Rec: 0.7116, F1: 0.7660, AUC: 0.9081
+Val   - Loss: 0.8763, Acc: 0.7818, Prec: 0.9518, Rec: 0.3251, F1: 0.4847, AUC: 0.9057
+✓ Saved best model with validation accuracy: 0.7818
+
+Epoch 14/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.2961, Acc: 0.8935, Prec: 0.8580, Rec: 0.7815, F1: 0.8180, AUC: 0.9414
+Val   - Loss: 0.6836, Acc: 0.6662, Prec: 0.4854, Rec: 0.9588, F1: 0.6445, AUC: 0.9073
+
+Epoch 15/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.2874, Acc: 0.8951, Prec: 0.8407, Rec: 0.8112, F1: 0.8257, AUC: 0.9450
+Val   - Loss: 0.2721, Acc: 0.8740, Prec: 0.8017, Rec: 0.7984, F1: 0.8000, AUC: 0.9301
+✓ Saved best model with validation accuracy: 0.8740
+
+Epoch 16/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.2457, Acc: 0.9146, Prec: 0.8837, Rec: 0.8303, F1: 0.8562, AUC: 0.9573
+Val   - Loss: 0.3873, Acc: 0.8532, Prec: 0.9452, Rec: 0.5679, F1: 0.7095, AUC: 0.9500
+
+Epoch 17/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.2112, Acc: 0.9308, Prec: 0.8950, Rec: 0.8770, F1: 0.8859, AUC: 0.9687
+Val   - Loss: 0.2759, Acc: 0.8649, Prec: 0.7309, Rec: 0.9053, F1: 0.8088, AUC: 0.9418
+
+Epoch 18/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1676, Acc: 0.9373, Prec: 0.9067, Rec: 0.8865, F1: 0.8965, AUC: 0.9784
+Val   - Loss: 0.2486, Acc: 0.9078, Prec: 0.8909, Rec: 0.8066, F1: 0.8467, AUC: 0.9569
+✓ Saved best model with validation accuracy: 0.9078
+
+Epoch 19/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1777, Acc: 0.9481, Prec: 0.9082, Rec: 0.9236, F1: 0.9159, AUC: 0.9840
+Val   - Loss: 0.5237, Acc: 0.7455, Prec: 0.5566, Rec: 0.9506, F1: 0.7021, AUC: 0.9379
+
+Epoch 20/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.3035, Acc: 0.8815, Prec: 0.7992, Rec: 0.8187, F1: 0.8088, AUC: 0.9313
+Val   - Loss: 0.4228, Acc: 0.7883, Prec: 0.6047, Rec: 0.9506, F1: 0.7392, AUC: 0.9386
+
+Epoch 21/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1935, Acc: 0.9279, Prec: 0.8906, Rec: 0.8717, F1: 0.8810, AUC: 0.9721
+Val   - Loss: 0.3447, Acc: 0.8896, Prec: 0.9293, Rec: 0.7037, F1: 0.8009, AUC: 0.9520
+
+Epoch 22/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1367, Acc: 0.9519, Prec: 0.9154, Rec: 0.9290, F1: 0.9221, AUC: 0.9853
+Val   - Loss: 0.2707, Acc: 0.8870, Prec: 0.7826, Rec: 0.8889, F1: 0.8324, AUC: 0.9529
+
+Epoch 23/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1467, Acc: 0.9597, Prec: 0.9261, Rec: 0.9438, F1: 0.9349, AUC: 0.9876
+Val   - Loss: 0.2474, Acc: 0.9000, Prec: 0.7964, Rec: 0.9177, F1: 0.8528, AUC: 0.9568
+
+Epoch 24/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1765, Acc: 0.9315, Prec: 0.8781, Rec: 0.9014, F1: 0.8896, AUC: 0.9769
+Val   - Loss: 0.3732, Acc: 0.8753, Prec: 0.9509, Rec: 0.6379, F1: 0.7635, AUC: 0.9498
+
+Epoch 25/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1228, Acc: 0.9591, Prec: 0.9369, Rec: 0.9290, F1: 0.9329, AUC: 0.9885
+Val   - Loss: 0.2093, Acc: 0.9338, Prec: 0.9248, Rec: 0.8601, F1: 0.8913, AUC: 0.9609
+✓ Saved best model with validation accuracy: 0.9338
+
+Epoch 26/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0815, Acc: 0.9727, Prec: 0.9633, Rec: 0.9470, F1: 0.9551, AUC: 0.9940
+Val   - Loss: 0.2586, Acc: 0.8857, Prec: 0.7609, Rec: 0.9300, F1: 0.8370, AUC: 0.9624
+
+Epoch 27/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0648, Acc: 0.9786, Prec: 0.9592, Rec: 0.9714, F1: 0.9652, AUC: 0.9953
+Val   - Loss: 0.2368, Acc: 0.9091, Prec: 0.8366, Rec: 0.8848, F1: 0.8600, AUC: 0.9570
+
+Epoch 28/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0439, Acc: 0.9909, Prec: 0.9781, Rec: 0.9926, F1: 0.9853, AUC: 0.9972
+Val   - Loss: 0.2755, Acc: 0.9143, Prec: 0.9155, Rec: 0.8025, F1: 0.8553, AUC: 0.9554
+
+Epoch 29/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1026, Acc: 0.9737, Prec: 0.9452, Rec: 0.9703, F1: 0.9576, AUC: 0.9922
+Val   - Loss: 0.3837, Acc: 0.8506, Prec: 0.6893, Rec: 0.9588, F1: 0.8021, AUC: 0.9569
+
+Epoch 30/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0803, Acc: 0.9737, Prec: 0.9527, Rec: 0.9618, F1: 0.9573, AUC: 0.9936
+Val   - Loss: 0.3401, Acc: 0.9000, Prec: 0.8097, Rec: 0.8930, F1: 0.8493, AUC: 0.9540
+
+Epoch 31/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0596, Acc: 0.9815, Prec: 0.9644, Rec: 0.9756, F1: 0.9700, AUC: 0.9959
+Val   - Loss: 0.2939, Acc: 0.9130, Prec: 0.8894, Rec: 0.8272, F1: 0.8571, AUC: 0.9597
+
+Epoch 32/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0284, Acc: 0.9948, Prec: 0.9843, Rec: 0.9989, F1: 0.9916, AUC: 0.9982
+Val   - Loss: 0.3295, Acc: 0.9182, Prec: 0.9167, Rec: 0.8148, F1: 0.8627, AUC: 0.9578
+
+Epoch 33/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0230, Acc: 0.9977, Prec: 0.9926, Rec: 1.0000, F1: 0.9963, AUC: 0.9979
+Val   - Loss: 0.3010, Acc: 0.9221, Prec: 0.9031, Rec: 0.8436, F1: 0.8723, AUC: 0.9597
+
+Epoch 34/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0344, Acc: 0.9961, Prec: 0.9895, Rec: 0.9979, F1: 0.9937, AUC: 0.9983
+Val   - Loss: 0.2865, Acc: 0.9169, Prec: 0.8978, Rec: 0.8313, F1: 0.8632, AUC: 0.9608
+
+Epoch 35/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1063, Acc: 0.9867, Prec: 0.9678, Rec: 0.9894, F1: 0.9785, AUC: 0.9968
+Val   - Loss: 0.4448, Acc: 0.9130, Prec: 0.9190, Rec: 0.7942, F1: 0.8521, AUC: 0.9550
+
+Epoch 36/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0265, Acc: 0.9955, Prec: 0.9884, Rec: 0.9968, F1: 0.9926, AUC: 0.9976
+Val   - Loss: 0.2971, Acc: 0.9221, Prec: 0.8588, Rec: 0.9012, F1: 0.8795, AUC: 0.9606
+
+Epoch 37/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0228, Acc: 0.9964, Prec: 0.9895, Rec: 0.9989, F1: 0.9942, AUC: 0.9979
+Val   - Loss: 0.3096, Acc: 0.9247, Prec: 0.8936, Rec: 0.8642, F1: 0.8787, AUC: 0.9596
+
+Epoch 38/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0182, Acc: 0.9974, Prec: 0.9916, Rec: 1.0000, F1: 0.9958, AUC: 0.9981
+Val   - Loss: 0.3353, Acc: 0.9247, Prec: 0.8936, Rec: 0.8642, F1: 0.8787, AUC: 0.9595
+
+Epoch 39/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0169, Acc: 0.9977, Prec: 0.9926, Rec: 1.0000, F1: 0.9963, AUC: 0.9983
+Val   - Loss: 0.3374, Acc: 0.9273, Prec: 0.8945, Rec: 0.8724, F1: 0.8833, AUC: 0.9591
+
+Epoch 40/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0162, Acc: 0.9977, Prec: 0.9926, Rec: 1.0000, F1: 0.9963, AUC: 0.9987
+Val   - Loss: 0.3761, Acc: 0.9208, Prec: 0.9027, Rec: 0.8395, F1: 0.8699, AUC: 0.9593
+
+Epoch 41/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0161, Acc: 0.9977, Prec: 0.9926, Rec: 1.0000, F1: 0.9963, AUC: 0.9985
+Val   - Loss: 0.3786, Acc: 0.9247, Prec: 0.9075, Rec: 0.8477, F1: 0.8766, AUC: 0.9586
+
+Epoch 42/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0157, Acc: 0.9974, Prec: 0.9926, Rec: 0.9989, F1: 0.9958, AUC: 0.9985
+Val   - Loss: 0.3682, Acc: 0.9260, Prec: 0.8875, Rec: 0.8765, F1: 0.8820, AUC: 0.9589
+
+Epoch 43/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0458, Acc: 0.9971, Prec: 0.9905, Rec: 1.0000, F1: 0.9953, AUC: 0.9988
+Val   - Loss: 0.3635, Acc: 0.9234, Prec: 0.9000, Rec: 0.8519, F1: 0.8753, AUC: 0.9589
+
+Epoch 44/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0160, Acc: 0.9974, Prec: 0.9926, Rec: 0.9989, F1: 0.9958, AUC: 0.9985
+Val   - Loss: 0.3601, Acc: 0.9234, Prec: 0.8932, Rec: 0.8601, F1: 0.8763, AUC: 0.9566
+
+Epoch 45/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.1833, Acc: 0.9974, Prec: 0.9947, Rec: 0.9968, F1: 0.9958, AUC: 0.9979
+Val   - Loss: 0.4117, Acc: 0.9195, Prec: 0.8987, Rec: 0.8395, F1: 0.8681, AUC: 0.9571
+
+Epoch 46/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0174, Acc: 0.9968, Prec: 0.9895, Rec: 1.0000, F1: 0.9947, AUC: 0.9993
+Val   - Loss: 0.3805, Acc: 0.9052, Prec: 0.8220, Rec: 0.8930, F1: 0.8560, AUC: 0.9562
+
+Epoch 47/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0190, Acc: 0.9971, Prec: 0.9905, Rec: 1.0000, F1: 0.9953, AUC: 0.9990
+Val   - Loss: 0.3587, Acc: 0.9195, Prec: 0.8851, Rec: 0.8560, F1: 0.8703, AUC: 0.9563
+
+Epoch 48/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0168, Acc: 0.9977, Prec: 0.9937, Rec: 0.9989, F1: 0.9963, AUC: 0.9986
+Val   - Loss: 0.3944, Acc: 0.9130, Prec: 0.8826, Rec: 0.8354, F1: 0.8584, AUC: 0.9528
+
+Epoch 49/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0348, Acc: 0.9971, Prec: 0.9916, Rec: 0.9989, F1: 0.9952, AUC: 0.9991
+Val   - Loss: 0.3551, Acc: 0.9182, Prec: 0.8750, Rec: 0.8642, F1: 0.8696, AUC: 0.9559
+
+Epoch 50/50
+------------------------------------------------------------
+Training:   0%|                                                                                                                   | 0/25 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:63: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Validation:   0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]/workspace/LUNGCANCER3D/train.py:101: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Train - Loss: 0.0168, Acc: 0.9968, Prec: 0.9937, Rec: 0.9958, F1: 0.9947, AUC: 0.9990
+Val   - Loss: 0.3464, Acc: 0.9169, Prec: 0.8745, Rec: 0.8601, F1: 0.8672, AUC: 0.9561
+
+============================================================
+Training completed!
+Best validation accuracy: 0.9338
+============================================================
